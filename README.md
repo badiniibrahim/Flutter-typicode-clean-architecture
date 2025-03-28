@@ -79,4 +79,4 @@ This project is open-source. Feel free to fork and contribute 😊
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by SAWADOGO Badini Ibrahim
