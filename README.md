@@ -1,16 +1,82 @@
-# typicode
+# 📱 Flutter Clean Architecture App with Dio & GetX
 
-A new Flutter project.
+A Flutter application based on **Clean Architecture**, using **GetX** for state management & navigation, and **Dio** for HTTP requests.
 
-## Getting Started
+## 🔧 Features
 
-This project is a starting point for a Flutter application.
+- Clean Architecture (Domain / Data / Presentation)
+- State management with GetX
+- API calls via Dio
+- Centralized HTTP error handling
+- Dependency injection using GetX Bindings
+- Unit tests for use cases & controllers
 
-A few resources to get you started if this is your first Flutter project:
+## 📂 Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+lib/
+├── core/
+│   ├── di/                      # Dependency injection setup
+│   ├── errors/                 # Custom exceptions & HTTP error handler
+│   └── network/                # Dio configuration
+│
+├── data/
+│   ├── models/                 # DTOs
+│   └── repository/             # Concrete implementations
+│
+├── domain/
+│   ├── entities/               # Domain models
+│   ├── repository/             # Abstract repositories
+│   └── usecase/                # Business logic
+│
+├── application/
+│   └── controllers/            # GetX Controllers (UI logic)
+│
+├── presentation/
+│   └── pages/                  # UI screens
+│
+├── config/                     # Constants and environment configs
+└── main.dart                   # App entry point
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Getting Started
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/yourproject.git
+cd yourproject
+```
+
+2. Install Flutter dependencies
+
+```bash
+flutter pub get
+```
+
+3. Run the app
+
+```bash
+flutter run
+```
+
+## 🧪 Run Unit Tests
+
+```bash
+flutter test
+```
+
+## ✅ Tech Stack
+
+- [Flutter](https://flutter.dev)
+- [GetX](https://pub.dev/packages/get)
+- [Dio](https://pub.dev/packages/dio)
+- [Mocktail](https://pub.dev/packages/mocktail)
+
+## 📄 License
+
+This project is open-source. Feel free to fork and contribute 😊
+
+---
+
+Made with ❤️ by [Your Name]
